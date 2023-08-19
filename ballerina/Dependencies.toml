@@ -9,18 +9,6 @@ distribution-version = "2201.8.10-SNAPSHOT"
 
 [[package]]
 org = "ballerina"
-name = "constraint"
-version = "1.4.0"
-scope = "testOnly"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"}
-]
-modules = [
-	{org = "ballerina", packageName = "constraint", moduleName = "constraint"}
-]
-
-[[package]]
-org = "ballerina"
 name = "crypto"
 version = "2.5.0"
 dependencies = [
@@ -81,40 +69,6 @@ dependencies = [
 org = "ballerina"
 name = "lang.object"
 version = "0.0.0"
-
-[[package]]
-org = "ballerina"
-name = "lang.regexp"
-version = "0.0.0"
-scope = "testOnly"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"}
-]
-
-[[package]]
-org = "ballerina"
-name = "lang.runtime"
-version = "0.0.0"
-scope = "testOnly"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"}
-]
-modules = [
-	{org = "ballerina", packageName = "lang.runtime", moduleName = "lang.runtime"}
-]
-
-[[package]]
-org = "ballerina"
-name = "lang.string"
-version = "0.0.0"
-scope = "testOnly"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "lang.regexp"}
-]
-modules = [
-	{org = "ballerina", packageName = "lang.string", moduleName = "lang.string"}
-]
 
 [[package]]
 org = "ballerina"
@@ -200,11 +154,8 @@ org = "ballerinax"
 name = "kafka"
 version = "3.10.0"
 dependencies = [
-	{org = "ballerina", name = "constraint"},
 	{org = "ballerina", name = "crypto"},
 	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "lang.runtime"},
-	{org = "ballerina", name = "lang.string"},
 	{org = "ballerina", name = "log"},
 	{org = "ballerina", name = "test"},
 	{org = "ballerina", name = "uuid"},
